@@ -124,6 +124,7 @@ h1 {
 
 .item a:active,
 .item a:focus,
+.item a.active,
 .item a:hover {
   -webkit-box-shadow: 0 0 10px 0 rgb(241, 55, 166) inset, 0 0 10px 4px rgb(241, 55, 166);
           box-shadow: 0 0 10px 0 rgb(241, 55, 166) inset, 0 0 10px 4px rgb(241, 55, 166);
