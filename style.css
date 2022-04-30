@@ -1,3 +1,133 @@
 * {
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  background-color: #ece5da;
+}
+
+body {
+ margin: 0 auto;
+ max-width: 880px;
+}
+
+.wrap {
+  margin: 0 15px 15px;
+}
+
+h1 {
+  
+  /* text-transform: uppercase;
+  font-family: cursive;
+  display: block;
+  color: #f137a6;
+  text-shadow: 0 13.36px 8.896px #f137a6,0 -2px 1px #fff; */
+
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 26px;
+}
+
+.animate-ul { 
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.animate-ul:not(:first-child) { 
+  padding-left: 15px;
+}
+
+.animate-ul li{
+  list-style:none;
+  letter-spacing:3px;
+  font-family:fantasy;
+  color:#f137a6;
+  animation:ani 1.2s linear infinite;
+  -webkit-animation:ani 1.2s linear infinite;
+}
+
+.animate-ul li:nth-child(1){
+  animation-delay:.2s
+}
+
+.animate-ul li:nth-child(2){
+  animation-delay:.6s
+}
+
+.animate-ul li:nth-child(3){
+  animation-delay:.8s
+}
+
+.animate-ul li:nth-child(4){
+  animation-delay:1s
+}
+
+.animate-ul li:nth-child(5){
+  animation-delay:1.4s
+}
+
+.animate-ul li:nth-child(6){
+  animation-delay:1.8s
+}
+
+.animate-ul li:nth-child(7){
+  animation-delay:1.12s
+}
+
+@keyframes ani {
+  0%{color:#44848;text-shadow:none}
+  90%{color:#44848;text-shadow:none}
+  100%{color:#A4DADA;text-shadow:0 0 7px #A4DADA,0 0 70px #A4DADA}
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.item a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: white;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 15px;
+  margin-left: 15px;
+	line-height: 38px;
+	font-size: 14px;
+	font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #f137a6 inset, 0 0 0 0 #f137a6;
+  transition: 150ms ease-in-out;
+}
+
+.item a:hover {
+  box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
+  color: #F137A6;
+}
+
+h2, h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.additional {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #f137a6;
+}
+
+span a {
+  color: #f137a6;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .item a {
+    margin-left: 0;
+    padding: 10px 15px;
+    line-height: 18px;
+  }
 }
