@@ -78,5 +78,13 @@
       тренажер по этой <a href="https://stamina-online.com/ru">ссылке</a></span>
   </div>
   <!-- /.wrap -->
+  <script>
+    let links = document.querySelectorAll('.item a').forEach(item => 
+      item.addEventListener("click", clickLink)
+    );
+    function clickLink(e) {
+      this.classList.add("active");
+    }
+  </script>
 </body>
 </html>
