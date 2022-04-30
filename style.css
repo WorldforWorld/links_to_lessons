@@ -98,18 +98,6 @@ h1 {
           animation-delay:1.12s
 }
 
-@-webkit-keyframes ani {
-  0%{color:#44848;text-shadow:none}
-  90%{color:#44848;text-shadow:none}
-  100%{color:#A4DADA;text-shadow:0 0 7px #A4DADA,0 0 70px #A4DADA}
-}
-
-@keyframes ani {
-  0%{color:#44848;text-shadow:none}
-  90%{color:#44848;text-shadow:none}
-  100%{color:#A4DADA;text-shadow:0 0 7px #A4DADA,0 0 70px #A4DADA}
-}
-
 .item {
   margin-bottom: 10px;
 }
@@ -162,4 +150,16 @@ span a {
     padding: 10px 15px;
     line-height: 18px;
   }
+}
+
+@-webkit-keyframes ani {
+  0%{color:#44848;text-shadow:none}
+  90%{color:#44848;text-shadow:none}
+  100%{color:#A4DADA;text-shadow:0 0 7px #A4DADA,0 0 70px #A4DADA}
+}
+
+@keyframes ani {
+  0%{color:#44848;text-shadow:none}
+  90%{color:#44848;text-shadow:none}
+  100%{color:#A4DADA;text-shadow:0 0 7px #A4DADA,0 0 70px #A4DADA}
 }
