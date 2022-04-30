@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -24,12 +32,19 @@ h1 {
   color: #f137a6;
   text-shadow: 0 13.36px 8.896px #f137a6,0 -2px 1px #fff; */
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 26px;
 }
 
 .animate-ul { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
   display: flex;
   margin: 0;
   padding-left: 0;
@@ -49,31 +64,44 @@ h1 {
 }
 
 .animate-ul li:nth-child(1){
-  animation-delay:.2s
+  -webkit-animation-delay:.2s;
+          animation-delay:.2s
 }
 
 .animate-ul li:nth-child(2){
-  animation-delay:.6s
+  -webkit-animation-delay:.6s;
+          animation-delay:.6s
 }
 
 .animate-ul li:nth-child(3){
-  animation-delay:.8s
+  -webkit-animation-delay:.8s;
+          animation-delay:.8s
 }
 
 .animate-ul li:nth-child(4){
-  animation-delay:1s
+  -webkit-animation-delay:1s;
+          animation-delay:1s
 }
 
 .animate-ul li:nth-child(5){
-  animation-delay:1.4s
+  -webkit-animation-delay:1.4s;
+          animation-delay:1.4s
 }
 
 .animate-ul li:nth-child(6){
-  animation-delay:1.8s
+  -webkit-animation-delay:1.8s;
+          animation-delay:1.8s
 }
 
 .animate-ul li:nth-child(7){
-  animation-delay:1.12s
+  -webkit-animation-delay:1.12s;
+          animation-delay:1.12s
+}
+
+@-webkit-keyframes ani {
+  0%{color:#44848;text-shadow:none}
+  90%{color:#44848;text-shadow:none}
+  100%{color:#A4DADA;text-shadow:0 0 7px #A4DADA,0 0 70px #A4DADA}
 }
 
 @keyframes ani {
@@ -99,12 +127,16 @@ h1 {
 	font-size: 14px;
 	font-weight: 600;
   border-radius: 10px;
-  box-shadow: 0 0 40px 40px #f137a6 inset, 0 0 0 0 #f137a6;
+  -webkit-box-shadow: 0 0 40px 40px #f137a6 inset, 0 0 0 0 #f137a6;
+          box-shadow: 0 0 40px 40px #f137a6 inset, 0 0 0 0 #f137a6;
+  -webkit-transition: 150ms ease-in-out;
+  -o-transition: 150ms ease-in-out;
   transition: 150ms ease-in-out;
 }
 
 .item a:hover {
-  box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
+  -webkit-box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
+          box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
   color: #F137A6;
 }
 
