@@ -78,23 +78,5 @@
       тренажер по этой <a href="https://stamina-online.com/ru">ссылке</a></span>
   </div>
   <!-- /.wrap -->
-  <script type="text/javascript">
-
-    let links = document.querySelectorAll('.item a');
-
-    for (let i = 0; i < links.length; i++) { //далее прокручиваем в цикле 
-      links[i].addEventListener("click", function() { // при клике 
-        if (!this.classList.contains('active')) { // проверяем есть ли у элемента, на котором произошло событие, class "active"
-          for (let i = 0; i < links.length; i++) {
-            links[i].classList.remove("active"); // а тут удаляем у всех
-          }
-          this.classList.add("active"); //если нет, добавляем
-        } else {
-          this.classList.remove("active"); // если есть, удаляем
-        }
-      });
-    }
-
-  </script>
 </body>
 </html>
