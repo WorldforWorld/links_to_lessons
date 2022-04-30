@@ -122,6 +122,8 @@ h1 {
   transition: 150ms ease-in-out;
 }
 
+.item a:active,
+.item a:focus,
 .item a:hover {
   -webkit-box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
           box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
